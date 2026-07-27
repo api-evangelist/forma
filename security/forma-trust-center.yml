@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+url: https://trust.joinforma.com/
+source: https://www.joinforma.com/platform/security
+certifications:
+- SOC 2 Type 2
+- HIPAA
+- GDPR
+evidence:
+- source: https://www.joinforma.com/platform/security
+  kind: security & compliance page
+  keywords:
+  - soc 2 type 2
+  - hipaa
+  - gdpr
+  - encryption at rest and in transit
+- source: https://trust.joinforma.com/
+  kind: trust center portal
+  note: real-time control monitor (JS-rendered) linked from the security page

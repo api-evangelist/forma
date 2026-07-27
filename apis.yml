@@ -1,8 +1,15 @@
 aid: forma
 name: Forma
-description: 'Forma is a company surfaced as a portfolio company of emergence-capital, ribbit-capital,
-  uncork-capital and added to the API Evangelist network as a stub for enrichment. Sector: hr-tech. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: 'Forma is a flexible employee benefits platform, founded in 2017, that lets
+  companies design, customize, and scale employee spending accounts from a single system.
+  Employers select from a suite of Lifestyle Spending Accounts (LSA), Health Spending Accounts
+  (HSA), Health Reimbursement Arrangements (HRA), and Flexible Spending Accounts (FSA), and
+  employees access benefits through the Forma Store, the Forma Visa Card, or reimbursement
+  claims. Forma connects to employer systems through 40+ HRIS and payroll integrations
+  (Workday, ADP, UKG, Paylocity), SCIM provisioning, SAML2 SSO, and file feeds. Forma does
+  not publish a public developer REST API; its technical surface is HRIS/SSO/SCIM integration
+  and its trust posture (SOC 2 Type 2, HIPAA, GDPR). Backed by Emergence Capital, Ribbit
+  Capital, and Uncork Capital.'
 url: https://raw.githubusercontent.com/api-evangelist/forma/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +19,30 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://cdn.prod.website-files.com/61fcf661d5fa0f6756473fea/62037846b95bd26645cb438c_Forma%20Logo%20Svg.svg
 tags:
 - Company
 - Hr Tech
+- Employee Benefits
+- Lifestyle Spending Accounts
+- Flexible Spending Accounts
+- Health Benefits
+- HRIS Integration
+- SCIM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +50,36 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/forma-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/forma-domain-security.yml
+- type: TrustCenter
+  url: security/forma-trust-center.yml
 - type: Website
   url: https://www.joinforma.com
+- type: Security
+  url: https://www.joinforma.com/legal/security
+- type: Compliance
+  url: https://www.joinforma.com/platform/security
+- type: Trust
+  url: https://trust.joinforma.com/
+- type: StatusPage
+  url: https://status.joinforma.com/
+- type: Blog
+  url: https://www.joinforma.com/blog
+- type: Support
+  url: https://support.joinforma.com/
+- type: Login
+  url: https://client.joinforma.com/login
+- type: TermsOfService
+  url: https://www.joinforma.com/legal/terms
+- type: PrivacyPolicy
+  url: https://www.joinforma.com/legal/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/joinforma
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
